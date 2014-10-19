@@ -1,0 +1,323 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+	<title>CHM-XY protoype</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+        	<a href="index.html"><img src="http://placehold.it/200x60/ebebeb/000000&text=logo" width="200" height="60"></a>
+            
+            <div class="pull-right nav-content">
+                <ul class="nav nav-pills pull-left">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Database</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+
+            
+            <a href="#" class="btn btn-default pull-right" data-toggle="modal" data-target="#myModal"><i class="fa fa-lock"></i> Login</a>
+            
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                  </div>
+                  <div class="modal-body">
+                    ...
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" onclick="$('#usermenu').show();" data-dismiss="modal">Save changes</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="usermenu" class="dropdown pull-right" style="display:none">
+              <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                <img src="http://placehold.it/32"> 
+                <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Edit My Profile</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Account details</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">My Organization</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">My Favorites</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">My Submitiions</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">My Meeting participates</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">My Data Checks</a></li>
+                <li role="presentation" class="divider"></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><i class="fa fa-"></i> Sign out</a></li>
+              </ul>
+            </div>
+            </div>
+        </div>
+    </header>
+    
+    <section class="container">
+    	<div class="row">
+            <section class="col-md-3">
+            	<h3>My Workspace:</h3>
+                <div class="list-group">
+                  <a href="#" class="list-group-item"><i class="fa fa-user"></i> Edit My Profile</a>
+                  <a href="#" class="list-group-item"><i class="fa fa-cog"></i> Account details</a>
+                  <a href="#" class="list-group-item"><i class="fa fa-columns"></i> My Organization</a>
+                  <a href="#" class="list-group-item active"><i class="fa fa-heart"></i> My Favorites<span class="badge">4</span></a>
+                  <a href="#" class="list-group-item"><i class="fa fa-plus"></i> My Submitiions<span class="badge">2</span></a>
+                  <a href="#" class="list-group-item"><i class="fa fa-users"></i> My Meeting participates<span class="badge">7</span></a>
+                  <a href="#" class="list-group-item"><i class="fa fa-file-text-o"></i> My Data Checks<span class="badge">12</span></a>
+                  
+                </div>
+            </section>
+            
+            <section class="col-md-9">
+            	<h2>Search Results For: </h2>
+				
+                <div class="text-right">
+                    <!-- Single button -->
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                        Sort by: Relevant <span class="caret"></span>
+                      </button>
+                      <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">Recent update</a></li>
+                        <li><a href="#">Most popular</a></li>
+                        <li><a href="#">Added date</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Relevant</a></li>
+                      </ul>
+                    </div>
+                </div>
+                                
+            	<div>
+                	 
+                     <!-- -->
+                     <div class="panel panel-default">
+						  <div class="panel-body">
+                            <img src="http://placehold.it/170" class="pull-left" style="margin:0 20px 0 0">
+                            <h3>title here title here title here</h3>
+                            
+                            <p>description here description here description here description here description here 
+                            description here description here description here description here description here 
+                            description here description here </p>
+                          </div>
+                          	<div class="panel-footer">
+                            	<span class="pull-right">
+                                    <a href="#" class="btn btn-primary"><i class="fa fa-file-text-o"></i> View</a>
+                                    <a href="#" class="btn btn-success"><i class="fa fa-share"></i> send to friend<a>
+                                    <a href="#" class="btn btn-danger"><i class="fa fa-remove"></i> Remove</a>
+                                </span>
+                                <br style="clear:both">
+							</div>
+                        </div>
+
+                     <!-- -->
+                     
+                     <!-- -->
+                     <div class="panel panel-default">
+						  <div class="panel-body">
+                            <img src="http://placehold.it/170" class="pull-left" style="margin:0 20px 0 0">
+                            <h3>title here title here title here</h3>
+                            
+                            <p>description here description here description here description here description here 
+                            description here description here description here description here description here 
+                            description here description here </p>
+                          </div>
+                          	<div class="panel-footer">
+                            	<span class="pull-right">
+                                    <a href="#" class="btn btn-primary"><i class="fa fa-file-text-o"></i> View</a>
+                                    <a href="#" class="btn btn-success"><i class="fa fa-share"></i> send to friend<a>
+                                    <a href="#" class="btn btn-danger"><i class="fa fa-remove"></i> Remove</a>
+                                </span>
+                                <br style="clear:both">
+							</div>
+                        </div>
+
+                     <!-- -->
+                     
+                     <!-- -->
+                     <div class="panel panel-default">
+						  <div class="panel-body">
+                            <img src="http://placehold.it/170" class="pull-left" style="margin:0 20px 0 0">
+                            <h3>title here title here title here</h3>
+                            
+                            <p>description here description here description here description here description here 
+                            description here description here description here description here description here 
+                            description here description here </p>
+                          </div>
+                          	<div class="panel-footer">
+                            	<span class="pull-right">
+                                    <a href="#" class="btn btn-primary"><i class="fa fa-file-text-o"></i> View</a>
+                                    <a href="#" class="btn btn-success"><i class="fa fa-share"></i> send to friend<a>
+                                    <a href="#" class="btn btn-danger"><i class="fa fa-remove"></i> Remove</a>
+                                </span>
+                                <br style="clear:both">
+							</div>
+                        </div>
+
+                     <!-- -->
+                     
+                     <!-- -->
+                     <div class="panel panel-default">
+						  <div class="panel-body">
+                            <img src="http://placehold.it/170" class="pull-left" style="margin:0 20px 0 0">
+                            <h3>title here title here title here</h3>
+                            
+                            <p>description here description here description here description here description here 
+                            description here description here description here description here description here 
+                            description here description here </p>
+                          </div>
+                          	<div class="panel-footer">
+                            	<span class="pull-right">
+                                    <a href="#" class="btn btn-primary"><i class="fa fa-file-text-o"></i> View</a>
+                                    <a href="#" class="btn btn-success"><i class="fa fa-share"></i> send to friend<a>
+                                    <a href="#" class="btn btn-danger"><i class="fa fa-remove"></i> Remove</a>
+                                </span>
+                                <br style="clear:both">
+							</div>
+                        </div>
+
+                     <!-- -->
+                     
+                     <!-- -->
+                     <div class="panel panel-default">
+						  <div class="panel-body">
+                            <img src="http://placehold.it/170" class="pull-left" style="margin:0 20px 0 0">
+                            <h3>title here title here title here</h3>
+                            
+                            <p>description here description here description here description here description here 
+                            description here description here description here description here description here 
+                            description here description here </p>
+                          </div>
+                          	<div class="panel-footer">
+                            	<span class="pull-right">
+                                    <a href="#" class="btn btn-primary"><i class="fa fa-file-text-o"></i> View</a>
+                                    <a href="#" class="btn btn-success"><i class="fa fa-share"></i> send to friend<a>
+                                    <a href="#" class="btn btn-danger"><i class="fa fa-remove"></i> Remove</a>
+                                </span>
+                                <br style="clear:both">
+							</div>
+                        </div>
+
+                     <!-- -->
+                     
+                     <!-- -->
+                     <div class="panel panel-default">
+						  <div class="panel-body">
+                            <img src="http://placehold.it/170" class="pull-left" style="margin:0 20px 0 0">
+                            <h3>title here title here title here</h3>
+                            
+                            <p>description here description here description here description here description here 
+                            description here description here description here description here description here 
+                            description here description here </p>
+                          </div>
+                          	<div class="panel-footer">
+                            	<span class="pull-right">
+                                    <a href="#" class="btn btn-primary"><i class="fa fa-file-text-o"></i> View</a>
+                                    <a href="#" class="btn btn-success"><i class="fa fa-share"></i> send to friend<a>
+                                    <a href="#" class="btn btn-danger"><i class="fa fa-remove"></i> Remove</a>
+                                </span>
+                                <br style="clear:both">
+							</div>
+                        </div>
+
+                     <!-- -->
+                     
+                     <!-- -->
+                     <div class="panel panel-default">
+						  <div class="panel-body">
+                            <img src="http://placehold.it/170" class="pull-left" style="margin:0 20px 0 0">
+                            <h3>title here title here title here</h3>
+                            
+                            <p>description here description here description here description here description here 
+                            description here description here description here description here description here 
+                            description here description here </p>
+                          </div>
+                          	<div class="panel-footer">
+                            	<span class="pull-right">
+                                    <a href="#" class="btn btn-primary"><i class="fa fa-file-text-o"></i> View</a>
+                                    <a href="#" class="btn btn-success"><i class="fa fa-share"></i> send to friend<a>
+                                    <a href="#" class="btn btn-danger"><i class="fa fa-remove"></i> Remove</a>
+                                </span>
+                                <br style="clear:both">
+							</div>
+                        </div>
+
+                     <!-- -->
+                     
+                     <div class="text-center">
+                         <ul class="pagination">
+                          <li class="disabled"><a href="#">«</a></li>
+                          <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+                          <li><a href="#">2</a></li>
+                          <li><a href="#">3</a></li>
+                          <li><a href="#">4</a></li>
+                          <li><a href="#">5</a></li>
+                          <li><a href="#">»</a></li>
+                       </ul>
+                       </div>
+                </div>
+                </div>
+            	<!--
+            	<h3>Account Details:</h3>
+                
+                <div class="col-md-3">First Name:</div>
+                <div class="col-md-9"><input class="full-width" type="text" /></div>
+                
+                <div class="col-md-3">Last Name:</div>
+                <div class="col-md-9"><input class="full-width" type="text" /></div>
+                
+                <div class="col-md-3">Email:</div>
+                <div class="col-md-9"><input class="full-width" type="text" /></div>
+                
+                <div class="col-md-3">First Name:</div>
+                <div class="col-md-9"><input class="full-width" type="text" /></div>
+                -->
+            </section>
+            </div>
+        </div>
+    
+    </section>
+       
+        
+   <footer class="">
+       <div class="container">
+        <div class="col-md-8">
+            <p><a href="index.html">Home</a> | <a href="#">About</a> | <a href="#">Database</a> | <a href="#">Hep</a> | <a href="#">Contact</a></p>
+            <p>© 2014 All rights reserved | CHM-XY</p>
+        </div>
+        <div class="col-md-4">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Subscribe To Our Newsletter">
+              <span class="input-group-btn">
+                <button class="btn btn-default" type="button"><i class="fa fa-envelope"></i></button>
+              </span>
+            </div>
+    
+            <p class="social text-right">
+                <a href="#" class="btn btn-default"><i class="fa fa-facebook"></i></a>
+                <a href="#" class="btn btn-default"><i class="fa fa-twitter"></i></a>
+                <a href="#" class="btn btn-default"><i class="fa fa-linkedin"></i></a>
+                <a href="#" class="btn btn-default"><i class="fa fa-youtube"></i></a>
+                <a href="#" class="btn btn-default"><i class="fa fa-pinterest"></i></a>
+            </p>
+        </div>
+   </div>
+   </footer>
+    
+    
+</body>
+</html>
